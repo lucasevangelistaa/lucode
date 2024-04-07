@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    width: 400px;
+    border: 1px solid white;
+    box-shadow: 10px 10px 5px 1px #940808;
+    border-radius: 20px;
+}
+
+.logo-lucode {
+    width: 120px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+h1,
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.social-midia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.social-midia>a>img {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 15px;
+}
+
+.box-links {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.box-links .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 10px;
+    transition: transform .8s ease;
+}
+
+.links img {
+    width: 30px;
+}
+
+.links a,
+.links p {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.links:hover {
+    transform: scale(1.05);
+}
+
+.social-icons {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.social-icons:hover {
+    transform: scale(1.05) rotate(360deg);
+}
+
+.seta {
+    padding: 5px;
+    transition: 1s;
+    transform: scale(0.9);
+}
+
+.seta:hover {
+    transform: scale(1.05);
+    transform: scale(1.05) rotate(360deg);
+}
+
+footer {
+    padding: 10px;
+}
+
+.rodape p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    color: white;
+}
+
+.modal-content {
+    background-color: #212121;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
